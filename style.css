@@ -16,6 +16,7 @@
 body{
   background-color: #EDEAE5;
 }
+
 /* Header container CSS style */
 header {
   background-color: #026670;
@@ -53,6 +54,7 @@ header {
     text-decoration: none;
     color: #FCE181;
 }
+/* end of header */
 
 .landing{
   width: clamp(800px, 100%, max);
