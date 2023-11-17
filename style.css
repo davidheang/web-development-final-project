@@ -22,6 +22,8 @@ header {
   background-color: #026670;
   text-align: center;
   font-size: 1.2em;
+  position: fixed;
+  top: 0;
 }
 .headerContainer {
     display: flex;
@@ -57,16 +59,17 @@ header {
 /* end of header */
 
 .landing{
+  padding: 250px;
   width: clamp(800px, 100%, max);
-  background-image: url(/image/pexels-daniel-lazarov-2649167.jpg);
-  /* Photo by Daniel Lazarov: https://www.pexels.com/photo/view-of-angkor-wat-in-cambodia-during-sunset-2649167/ */
+  background-image: url(/image/candle-procession-ceremony-around-buddha-statue-twilight-vesak-day-buddha-birthday-phuttha-monthon-buddhist-park-nakhon-pathom-thailand.jpg);
+  /* source: https://www.freepik.com/free-photo/candle-procession-ceremony-around-buddha-statue-twilight-vesak-day-buddha-birthday-phuttha-monthon-buddhist-park-nakhon-pathom-thailand_28031421.htm#page=2&query=siem%20reap%20at%20night&position=39&from_view=search&track=ais&uuid=3d8a332e-0b8e-4b8d-9ba6-1f7ded595a41">Image by Wiroj Sidhisoradej</a> on Freepik */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
-  backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
 }
 
 .landing-text{
+  text-align: center;
   padding: 80px 0 25px 50px;
   color: #FCE181;
 }
@@ -82,16 +85,16 @@ header {
 }
 /* Form container for CSS style */
 #form-containter{
-  /* background-color: #026670; */
+  /* margin: 50px; */
+  padding: 35px;
   display: flex;
   justify-content: center;
 }
 
 .landing #form{
-  margin: 50px;
+  padding: 50px;
   color: black;
   background-color: #EDEAE5;
-  padding: 25px;
   border: solid 1px white;
   border-radius: 10px;
   font-size: 1.3em;
