@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="landing.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="RomdoulTransport.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Booking</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Sign-in</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h1>Welcome to <br> Romdoul Transport</h1>
+            </div>
+            <div class="col">
+                <div class="form-container">
+                    <form>
+                        <label for="from">From:</label>
+                        <input type="text" id="from" list="fromList" name="from" required>
+                
+                        <label for="to">To:</label>
+                        <input type="text" id="to" list="toList" name="to" required>
+                
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" required>
+                
+                        <datalist id="fromList">
+                            <option value="Phnom Penh">
+                            <option value="Sihanoukville">
+                            <option value="Battambang">
+                            <option value="Siem Reap">
+                            <!-- Add more options as needed -->
+                        </datalist>
+                
+                        <datalist id="toList">
+                            <option value="Phnom Penh">
+                            <option value="Sihanoukville">
+                            <option value="Battambang">
+                            <option value="Siem Reap">
+                            <!-- Add more options as needed -->
+                        </datalist>
+                
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popularDes">
+        <h3>Popular <span>Destinations</span> </h3>
+        <div id="gallery">
+            <figure>
+                <img src="image/D'Angkor.jpg" alt="Angkor Wat" height="180" width="240">
+                <figcaption>(Source: Wikipedia)</figcaption>
+            </figure>
+            <figure>
+                <img src="image/Battambang.jpg" alt="Battambang" height="180" width="240" >
+                <figcaption>(Source: Angkor 7th travel) </figcaption>
+            </figure>
+            <figure>
+                <img src="image/durian-roundabout.jpg" alt="kampot" height="180" width="240">
+                <figcaption>(Source: www.realestate.com.kh)</figcaption>    
+            </figure>
+            <figure>
+                <img src="image/sihanoukville.jpg" alt="sihanoukville" height="180" width="240">
+                <figcaption>(Source: The Straits Time)</figcaption>    
+            </figure>
+        </div>
+
+    </div>
+
+    <div id="table-container">
+        <table class="ticket-prices">
+            <caption>
+                Ticket Prices and Schedules
+            </caption>
+            <thead>
+                <tr>
+                    <th>Route</th>
+                    <th>Departure Time</th>
+                    <th>Arrival Time</th>
+                    <th>Price (USD)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Phnom Penh to Siem Reap</td>
+                    <td>8:00 AM</td>
+                    <td>2:00 PM</td>
+                    <td>$12.00</td>
+                </tr>
+                <tr class="alt">
+                    <td>Phnom Penh to Battambang</td>
+                    <td>9:00 AM</td>
+                    <td>3:00 PM</td>
+                    <td>$15.00</td>
+                </tr>
+                <tr>
+                    <td>Siem Reap to Phnom Penh</td>
+                    <td>10:00 AM</td>
+                    <td>4:00 PM</td>
+                    <td>$12.50</td>
+                </tr>
+                <tr class="alt">
+                    <td>Sihanoukville to Phnom Penh</td>
+                    <td>11:00 PM</td>
+                    <td>5:00 AM</td>
+                    <td>$16.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- list of features -->
+    <div id="features-container">
+        <h1><span>Our Features</span></h1>
+        <div id="bus-features">
+            <div>
+                <span class="material-symbols-outlined">share_location</span>
+                <p>GPS</p>
+            </div>
+            <div>
+                <span class="material-symbols-outlined"> water_bottle</span>
+                <p>Water bottle</p>
+            </div>
+            <div>
+                <span class="material-symbols-outlined">map</span>
+                <p>Excellence Navigation</p>
+            </div>
+            <div>
+                <span class="material-symbols-outlined">directions_bus</span>
+                <p>Quality buses</p>
+            </div>
+            <div>
+                <span class="material-symbols-outlined">ac_unit</span>
+                <p>Air condition</p>
+            </div>
+    
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+    
+    <!-- footer page -->
+    <div class="footer">
+        <p>Romdoul Development &copy; 2023 Roumdoul Transport. All rights reserved.</p>
+        <p>
+            <a href="landingPage.html">Home</a> |
+            <a href="#">About Us</a> |
+            <a href="#">Services</a> |
+            <a href="#">Contact</a>
+        </p>
+    </div>
+</body>
+</html>
