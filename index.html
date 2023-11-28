@@ -16,53 +16,39 @@ body {
   background-color: #f0f0f0;
 }
 
-header {
-  background-color: #026670;
-  text-align: center;
-  font-size: 1.2em;
-}
-.headerContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-nav {
-  width: clamp(800px,60%,800px); /*Adjustable navigation bar */
-}
-ul {
-  list-style-type: none;
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-}
-.headerlink{
-  text-decoration: none;
-  color: #FCE181;
-      }
-
-.container {
-  width: 100%;
-  margin: 0 auto;
+.heading-container{
+    width: 100%;
+    height: 100px;
 }
 
-.header {
-  background-color: #026670;
-  color: #FCE181;
-  padding: 20px;
-  text-align: center;
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
 }
 
-.header h1 {
-  font-size: 36px;
+.logo{
+    margin-left: 50px;
+    width: 100px;
+    cursor: pointer;
 }
 
-.logo {
-  width: clamp(130px, 8%,130px); /* adjust the width to be fixed*/
-  display: flex;
-  align-items: center;
+nav{
+    flex: 1;
+    text-align: right;
+    margin-right: 30px;
 }
-.logo img {
-  max-width: 100%; /*The width fit the container*/
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #133125;
+    font-size: 20px;
 }
 
 .form {
@@ -169,25 +155,22 @@ right: 0;
 }
     </style> 
 </head>
-<header>
-    <div class="headerContainer">
-        <div class="logo">
-            <img src="_0bad04f0-bea2-4927-bbf3-1e51a40f4e7d.jpeg" alt="Romdoul Transport Logo">
-        </div>
-        <nav class="navbar background">
-            <ul class="nav-list">
-                <li><a class="headerlink" href="landingPage.html">Home Page</a></li>
-                <li><a class="headerlink" href="aboutpage.html">About Page</a></li>
-                <li><a class="headerlink" href="#contact-page">Contact Page</a></li>
-                <li><a class="headerlink" href="index.html">Booking Page</a></li>
-                <li><a class="headerlink" href="#sign-in">
-                    <i class="fa-solid fa-right-to-bracket"></i> Sign-in
-                </a></li>
+
+<body>
+  <div class="heading-container">
+    <div class="navbar">
+        <img src="image/RomdoulTransport.png" class="logo">
+        <nav>
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="index.html">Booking</a></li>
+                <li><a href="ContactUsPage.html">Contact</a></li>
+                <li><a href="aboutpage.html">About</a></li>
+                <li><a href="#sign-in">Sign-in</a></li>
             </ul>
         </nav>
     </div>
-</header>
-<body>
+</div>
     <div class="container">
         <!-- <div class="header">
             <h1>Transportation Booking</h1>
