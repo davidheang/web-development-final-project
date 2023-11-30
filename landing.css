@@ -233,6 +233,7 @@ button:hover {
       display: grid;
       grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns as needed */
     }
+
     .navbar {
         height: auto;
         flex-direction: column;

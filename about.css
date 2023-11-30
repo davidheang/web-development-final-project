@@ -109,35 +109,7 @@ footer p {
     margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-    .headerContainer {
-        flex-direction: column;
-    }
 
-    .logo {
-        width: 90%;
-        margin-bottom: 20px;
-        padding-top: 10px;
-    }
-
-    .navbar {
-        width: 100%;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-    }
-
-    .navbar li {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .container {
-        max-width: 100%;
-        padding: 10px;
-    }
-}
 
 @media only screen and (max-width: 920px) {
     .navbar {
