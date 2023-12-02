@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <script src="https://kit.fontawesome.com/5d5991ac51.js" crossorigin="anonymous"></script>
+    <style>
+         *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.heading-container{
+    width: 100%;
+    height: 100px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.logo{
+    margin-left: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    margin-right: 30px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #133125;
+    font-size: 20px;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: #133125;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+.form {
+  background-color: white;
+  padding: 40px;
+  border: 1px solid #ccc;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form input, .form select {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.form button {
+  width: 100%;
+  height: 50px;
+  background-color: #026670;
+  color:#FCE181 ;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: larger;
+}
+
+.form button:hover {
+  background-color:black;
+}
+
+.schedules {
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.schedules table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedules th, .schedules td {
+  padding: 10px;
+  border: 0px;
+  text-align: center;
+}
+
+.schedules th {
+  background-color: #f0f0f0;
+}
+
+.schedules td:first-child, .schedules td:last-child {
+  color: red;
+}
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  background-color: #026670;
+  text-align: center;
+  color: #FCE181;
+}
+
+.carousel .images {
+  display: flex;
+  width: 100%;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+}
+
+.carousel .images img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.carousel .prev {
+  left: 0;
+}
+
+.carousel .next {
+right: 0;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #026670;
+  color: #fff;
+  text-align: center;
+}
+/* Style the links in the footer */
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 920px) {
+  .checkbtn{
+      display: block;
+    }
+
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #fff;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5S;
+    }
+    nav ul li{
+      display: block;
+      margin: 30px;
+    }
+    nav ul li a{
+      font-size: 20px ;
+      
+    }
+    #check:checked ~ ul{
+      left:0;
+    }
+}
+
+    </style> 
+</head>
+
+<body>
+  <div class="heading-container">
+    <div class="navbar">
+        <img src="image/RomdoulTransport.png" class="logo">
+        <nav>
+          <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="index.html">Booking</a></li>
+                <li><a href="ContactUsPage.html">Contact</a></li>
+                <li><a href="aboutpage.html">About</a></li>
+                <li><a href="#sign-in">Sign-in</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+    <div class="container">
+        <!-- <div class="header">
+            <h1>Transportation Booking</h1>
+            <p>Book your ride online with us</p>
+        </div> -->
+        <div class="form">
+            <form>
+                <label for="from">From:</label>
+                <input type="text" id="from" name="from" placeholder="Enter your departure location" required>
+                <label for="to">To:</label>
+                <input type="text" id="to" name="to" placeholder="Enter your destination location" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+                <label for="mode">Mode of transportation:</label>
+                <select id="mode" name="mode" required>
+                    <option value="">Select one</option>
+                    <option value="bus">Bus</option>
+                    <option value="train">Train</option>
+                    <option value="car">Car</option>
+                    <option value="bike">Bike</option>
+                </select>
+                <button type="submit">Book Now</button>
+            </form>
+            <div class="schedules">
+                <table>
+                    <tr>
+                        <th>Departure</th>
+                        <th>Duration</th>
+                        <th>Arrival</th>
+                        <th>Price</th>
+                        <th>Seats</th>
+                        <th>Class</th>
+                    </tr>
+                    <tr>
+                        <td>23:45</td>
+                        <td>5h30m</td>
+                        <td>05:15</td>
+                        <td>$13</td>
+                        <td>30</td>
+                        <td>Economy</td>
+                    </tr>
+                    <tr>
+                        <td>23:55</td>
+                        <td>5h30m</td>
+                        <td>05:25</td>
+                        <td>$30</td>
+                        <td>18</td>
+                        <td>Premium Economy</td>
+                    </tr>
+                    <tr>
+                        <td>23:00</td>
+                        <td>6h00m</td>
+                        <td>05:00</td>
+                        <td>$12</td>
+                        <td>25</td>
+                        <td>Economy</td>
+                    </tr>
+                    <tr>
+                        <td>22:30</td>
+                        <td>6h30m</td>
+                        <td>05:00</td>
+                        <td>$30</td>
+                        <td>20</td>
+                        <td>Premium Economy</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Explore -->
+    <div class="carousel"> 
+        <h2>Explore Cambodia</h2>
+        <p>These popular destinations have a lot to offer</p>
+        <div class="images">
+          <img src="https://cambodianess.com/uploads/images/1650023311vtppb-20220415-112541-01.jpeg" alt="Sihanoukville">
+
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Tatai_River%2C_Koh_Kong.jpg" alt="Koh Kong">
+
+          <img src="https://www.battambang.com/wp-content/uploads/2020/11/Lok-Ta-Dombong-Kronhoung-1-1200x800.jpg" alt="Battambang">
+          
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/469655419.jpg?k=e1ba86e4facd859dc354e57999fcb48a5dbee91cb0e799c7c12d7a4d47f44305&o=&hp=1" alt="Kep">
+          
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/3c/9f/00/morning-visit-to-the.jpg?w=500&h=300&s=1" alt="Kratie">
+          
+          <img src="https://asiaforholiday.com/wp-content/uploads/2021/05/Mondulkiri-Top-Attractions-to-Visit-1.jpg" alt="Mondulkiri Province">
+        </div>
+      </div> 
+      <div class="footer">
+        <p>Romdoul Development &copy; 2023 Roumdoul Transport. All rights reserved.</p>
+        <p>
+            <a href="landingPage.html">Home</a> |
+            <a href="#">About Us</a> |
+            <a href="#">Services</a> |
+            <a href="#">Contact</a>
+        </p>
+    </div>     
+</body>
+</html>
