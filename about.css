@@ -92,6 +92,20 @@ nav ul li a{
     list-style-type: none;
 }
 
+.checkbtn{
+    font-size: 30px;
+    color: #133125;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check{
+    display: none;
+  }
+
 .container {
     margin: 0 auto;
     padding: 20px;
@@ -186,23 +200,29 @@ p {
 }
 
 @media only screen and (max-width: 920px) {
-    .navbar {
-        height: auto;
-        flex-direction: column;
-    }
-
-    nav {
+    .checkbtn{
+        display: block;
+      }
+  
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        top: 80px;
+        left: -100%;
         text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-      font-size: 20px;
-      margin-top: 20px;
-      margin-bottom: 20px;
+        transition: all 0.5S;
+      }
+      nav ul li{
+        display: block;
+        margin: 30px;
+      }
+      nav ul li a{
+        font-size: 20px ;
         
-    }
+      }
+      #check:checked ~ ul{
+        left:0;
+      }
 }
