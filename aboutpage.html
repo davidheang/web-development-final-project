@@ -2,12 +2,14 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>About Page</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="about.css">
-    <script src="https://kit.fontawesome.com/5d5991ac51.js" crossorigin="anonymous"></script>
+    <head>
+        <title>About Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://kit.fontawesome.com/5d5991ac51.js" crossorigin="anonymous"></script>
+    </head>
 </head>
 <body>
     <div class="heading-container">
@@ -22,32 +24,126 @@
                     <li><a href="landing.html">Home</a></li>
                     <li><a href="index.html">Booking</a></li>
                     <li><a href="ContactUsPage.html">Contact</a></li>
-                    <li><a href="aboutpage.html">About</a></li>
+                    <li><a href="aboutpage1.html">About</a></li>
                     <li><a href="#sign-in">Sign-in</a></li>
                 </ul>
             </nav>
         </div>
     </div>
     <section class="contact">
-        <div class="container">
-            <div class="background">
-                <h3>About Us</h3>
+        <div class="background">
+            <h1>About Us</h1>
+            <div class="card">
+            <img src="image/RomdoulTransport.jpeg" class="image">
+                <div>
+                <h3>Romdoul Transport</h3>
+                <h4>Founded in 2023</h4>
+                </div>
             </div>
-            <p>At Romdoul Transport, whether you need to travel across town or transport goods across the country, we are here to provide you with a seamless experience.</p>
-            <div class="background">
-                <h3>Our Services</h3>
+        </div>
+        <a href="#faqsection"> 
+            <button class="faq-button" id="faqs">
+                See Our Frequently Asked Questions
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+        </a>
+
+        <div class="background">
+            <h3>Our Services</h3>
+            <div class="imgcontainer">
+
+                <div class="imgbox">
+                    <img src="/image/passenger.png" class="img-face">
+                    <p>Passenger Transportation</p>
+                    
+                </div>
+                <div class="imgbox">
+                    <img src="/image/cargo.png" class="img-face">
+                    <p>Cargo Delivery</p>
+                    
+                </div>
+                <div class="imgbox">
+                    <img src="/image/logistics.png" class="img-face">
+                    <p>Logistics Solution</p>
+                    
+                </div>
             </div>
-            <ul>
-                <li>Passenger Transportation</li>
-                <li>Cargo Delivery</li>
-                <li>Logistics Solutions</li>
-            </ul>
-                <h3>Why Choose Us?</h3>
-            <ul>
-                <li>Friendly and Professional Staff</li>
-                <li>Reasonable Pricing</li>
-                <li>Convenience and Safety</li>
-            </ul>
+        </div>
+
+        <div class="background">
+            <h3>Why Choose Us?</h3>
+            <div class="imgcontainer">
+
+                <div class="imgbox">
+                    <img src="/image/clock.png" class="img-face">
+                    <p>Time-Saving</p>
+                    
+                </div>
+                <div class="imgbox">
+                    <img src="/image/friendly.png" class="img-face">
+                    <p>Friendly Staffs</p>
+                    
+                </div>
+                <div class="imgbox">
+                    <img src="/image/convenience.png" class="img-face">
+                    <p>Convenience</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class = "wrapper">
+            <h1 id="faqsection">Frequently Asked Questions</h1>
+            
+            <div class="faq" id="faqs">
+                <button class="accordion">
+                    What types of transportation services do you provide?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <p>We provide a range of transportation services, including airport transfers, point-to-point rides, and group transportation for special events or occasions.</p>
+                </div>
+            </div>
+            
+            <div class="faq">
+                <button class="accordion">
+                    How can I book a ride with your transportation service?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <p>Booking a ride with us is easy! You can book through our website or by calling our customer support line. Simply provide your pickup and drop-off locations, select the date and time, and choose the vehicle type that suits your needs.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <button class="accordion">
+                    Are your drivers licensed and insured?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <p>Yes, all our drivers are licensed and insured. We carefully screen and select experienced drivers who prioritize safety and professionalism.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <button class="accordion">
+                    What is your pricing structure?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <p>Our pricing is based on factors such as distance, vehicle type, and any additional services requested. We strive to provide competitive and transparent pricing, and you can get an estimate for your ride through our website before booking.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <button class="accordion">
+                    How do you ensure passenger safety?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <p>Passenger safety is our top priority. We regularly maintain and inspect our vehicles to ensure they are in optimal condition. Our drivers undergo background checks, and we monitor their performance to ensure safe and responsible driving. Additionally, we have a 24/7 support line for any safety concerns during your ride.</p>
+                </div>
+            </div>
+
         </div>
     </section>
     <div class="footer">
@@ -56,7 +152,7 @@
             <a href="landing.html">Home</a> |
             <a href="aboutpage.html">About Us</a> |
             <a href="index.html">Booking</a> |
-            <a href="contactus.css">Contact</a>
+            <a href="ContactUsPage.html">Contact</a>
         </p>
     </div>
 </body>
