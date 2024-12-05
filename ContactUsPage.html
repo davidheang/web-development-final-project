@@ -1,86 +1,151 @@
-<DOCTYPE html> 
-    <html>
-        <head>
-            <meta name="viewport" content="width=width, initial-scale=1.0">
-            <title>Contact Page</title>
-            <link rel="stylesheet" href="contactus.css">    
-            <script src="https://kit.fontawesome.com/5d5991ac51.js" crossorigin="anonymous"></script>
-        </head>
-        <body>
-            <div class="heading-container">
-                <div class="navbar">
-                    <img src="image/RomdoulTransport.png" class="logo">
-                    <nav>
-                        <input type="checkbox" id="check">
-                        <label for="check" class="checkbtn">
-                            <i class="fa-solid fa-bars"></i>
-                        </label>
-                        <ul>
-                            <li><a href="landing.html">Home</a></li>
-                            <li><a href="index.html">Booking</a></li>
-                            <li><a href="ContactUsPage.html">Contact</a></li>
-                            <li><a href="aboutpage.html">About</a></li>
-                            <li><a href="signin.html">Sign-in</a></li>
-                        </ul>
-                    </nav>
-                </div>
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Page</title>
+        <link rel="stylesheet" href="contactus.css">    
+        <script src="https://kit.fontawesome.com/5d5991ac51.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="heading-container">
+            <div class="navbar">
+                <img src="image/RomdoulTransport.png" class="logo">
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <ul>
+                        <li><a href="landing.html">Home</a></li>
+                        <li><a href="index.html">Booking</a></li>
+                        <li><a href="ContactUsPage.html">Contact</a></li>
+                        <li><a href="aboutpage.html">About</a></li>
+                        <li><a href="signin.html">Sign-in</a></li>
+                    </ul>
+                </nav>
             </div>
-            <section class="contact">
-                <div class="content">
-                    <h2>Contact Us</h2>
-                    <p>Please write your thought that you want to ask below.</p>
-                </div>
-                <div class="container">
-                    <div class="contactInfo">
-                        <div class="box">
-                            <div class="text">
-                                <h3>Address</h3>
-                                    <p>St No.1003, Phnom Penh</p>                                    
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="text">
-                                <h3>Phone</h3>
-                                    <p>023-639-185</p>                                    
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="text">
-                                <h3>Email</h3>
-                                    <p>something@gmail.com</p>                                    
-                            </div>
+        </div>
+        <section class="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>Please write your thoughts or questions below.</p>
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>St No.1003, Phnom Penh</p>                                    
                         </div>
                     </div>
-                    <div class="contactForm">
-                        <form>
-                            <h2>Send Message</h2>
-                            <div class="inputBox">
-                                <input type="text" name="" required="required">   
-                                <span>Full Name</span>                             
-                            </div>
-                            <div class="inputBox">
-                                <input type="text" name="" required="required">   
-                                <span>Email</span>                             
-                            </div>
-                            <div class="inputBox">
-                               <textarea required="required"></textarea> 
-                               <span>Type Your Message...</span>                       
-                            </div>
-                            <div class="inputBox">
-                                <input type="submit" name="" value="Send">                                                             
-                            </div>
-                        </form>
+                    <div class="box">
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>023-639-185</p>                                    
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>something@gmail.com</p>                                    
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form>
+                        <h2>Send Message</h2>
+                        <div class="inputBox">
+                            <input type="text" name="name" required="required">   
+                            <span>Full Name</span>                             
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="email" required="required">   
+                            <span>Email</span>                             
+                        </div>
+                        <div class="inputBox">
+                            <textarea id="message" required="required"></textarea> 
+                            <span>Type Your Message...</span> 
+                            <p id="charCount">0/250 characters</p>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" value="Send">                                                             
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="footer">
+            <p>&copy; 2023 Romdoul Transport. All rights reserved.</p>
+            <p>
+                <a href="landing.html">Home</a> |
+                <a href="aboutpage.html">About Us</a> |
+                <a href="index.html">Booking</a> |
+                <a href="ContactUsPage.html">Contact</a>
+            </p>
+        </div>
 
-                    </div>
-                </div>
-            </section>
-            <div class="footer">
-                <p>&copy; 2023 Roumdoul Transport. All rights reserved.</p>
-                <p>
-                    <a href="landing.html">Home</a> |
-                    <a href="aboutpage.html">About Us</a> |
-                    <a href="index.html">Booking</a> |
-                    <a href="contactus.css">Contact</a>
-                </p>
-            </div>
-        </body>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const contentSection = document.querySelector('.content p');
+                const hours = new Date().getHours(); // Dynamic Greeting
+                let greeting = "Hello";
+                if (hours < 12) {
+                    greeting = "Good morning";
+                } else if (hours < 18) {
+                    greeting = "Good afternoon";
+                } else {
+                    greeting = "Good evening";
+                }
+                contentSection.textContent = `${greeting}! Please write your thoughts or questions below.`;
+
+                const messageBox = document.getElementById("message");
+                const charCount = document.getElementById("charCount"); // Character Counter for the Message
+                const maxChars = 250;
+
+                messageBox.addEventListener("input", () => {
+                    const currentLength = messageBox.value.length;
+                    charCount.textContent = `${currentLength}/${maxChars} characters`;
+                    if (currentLength > maxChars) {
+                        charCount.style.color = "red"; // Warn if over limit
+                    } else {
+                        charCount.style.color = "black"; // Normal color
+                    }
+                });
+
+                const inputs = document.querySelectorAll(".inputBox input, .inputBox textarea");
+                inputs.forEach(input => {
+                    input.addEventListener("focus", () => {
+                        input.style.boxShadow = "0 0 5px #007bff";
+                        input.style.borderColor = "#007bff";
+                    });
+                    input.addEventListener("blur", () => {
+                        input.style.boxShadow = "none";
+                        input.style.borderColor = "#ccc";
+                    });
+                });
+
+                document.querySelector('form').addEventListener('submit', function(event) {
+                    event.preventDefault(); 
+                    const name = document.querySelector('input[name="name"]').value.trim();  // Form Validation
+                    const email = document.querySelector('input[name="email"]').value.trim();
+                    const message = document.querySelector('textarea').value.trim();
+            
+                    if (!name || !email || !message) {
+                        alert("Please fill out all fields.");
+                    } else if (!validateEmail(email)) {
+                        alert("Invalid email address.");
+                    } else {
+                        alert(`Thank you, ${name}! Your message has been sent.`);
+                        this.reset();
+                        charCount.textContent = `0/${maxChars} characters`; // Reset counter
+                    }
+                });
+
+                function validateEmail(email) {
+                    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Check Email
+                    return re.test(email);
+                }
+            });
+        </script>  
+    </body>
+</html>
