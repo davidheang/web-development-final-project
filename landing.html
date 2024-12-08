@@ -30,22 +30,27 @@
                 </ul>
             </nav>
         </div>
-
+        <!-- dialog box -->
+        <div id="overlay"></div>
+        <div id="dialog">
+          <h2 id="dialog-heading">Travel Schedule</h2>
+          <div id="output"></div>
+          <button onclick="closeDialog()">Close</button>
+        </div>
+        <!--  -->
         <div class="row">
             <div class="col">
                 <h1>Welcome to <br> Romdoul Transport</h1>
             </div>
             <div class="col">
                 <div class="form-container">
-                    <form>
+                    <form id="travelForm">
                         <label for="from">From:</label>
                         <input type="text" id="from" list="fromList" name="from" required>
                         <label for="to">To:</label>
                         <input type="text" id="to" list="toList" name="to" required>
                         <label for="date">Date:</label>
                         <input type="date" id="date" name="date" required>
-                        <label for="time">Time:</label>
-                        <input type="time" id="time" name="time" required>
                         <datalist id="fromList">
                             <option value="Phnom Penh">
                             <option value="Sihanoukville">
@@ -58,13 +63,17 @@
                             <option value="Battambang">
                             <option value="Siem Reap">
                         </datalist>
-                        <button type="submit">Search </button>
+                        <button type="submit" onclick="showDialog()">Search</button>
                     </form>
                 </div>
             </div>
         </div>
     </header>
     <main>
+        <section id="weather-section">
+            <h3>Weather in Popular Cities of Cambodia</h3>
+            <div id="weather">Loading...</div>
+        </section>
         <section id="popularDes">
             <h3>Popular <span>Destinations</span> </h3>
             <div id="gallery">
@@ -172,5 +181,7 @@
 
         </p>
     </footer>
+    <script src="weatherapi.js"></script>
+    <script src="travelTime.js"></script>
 </body>
 </html>
